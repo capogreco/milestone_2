@@ -1,0 +1,5 @@
+{
+  "tasks": {
+    "watch": "deno run --allow-read --allow-run watch.ts"
+  }
+}

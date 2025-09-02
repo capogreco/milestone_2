@@ -1,0 +1,31 @@
+---
+title: "PhD Milestone 2"
+author: "Your Name"
+date: "2025-08-29"
+institution: "University Name"
+department: "Department Name"
+degree: "PhD"
+abstract: |
+  This is the abstract for your milestone 2 document. 
+  Replace this with your actual abstract.
+keywords: ["keyword1", "keyword2", "keyword3"]
+lang: en-US
+documentclass: article
+fontsize: 12pt
+geometry: 
+  - margin=1in
+linestretch: 1.5
+bibliography: bibliography.bib
+csl: apa.csl
+link-citations: true
+colorlinks: true
+linkcolor: blue
+urlcolor: blue
+citecolor: blue
+header-includes: |
+  \renewcommand{\thesection}{\roman{section}}
+  \setcounter{section}{0}
+  \makeatletter
+  \renewcommand{\@seccntformat}[1]{\csname the#1\endcsname\quad}
+  \makeatother
+---
