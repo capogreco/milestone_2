@@ -1,0 +1,349 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
+\documentclass[
+  american,
+  12pt,
+]{article}
+\usepackage{xcolor}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\setcounter{secnumdepth}{5}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\usepackage{setspace}
+% definitions for citeproc citations
+\NewDocumentCommand\citeproctext{}{}
+\NewDocumentCommand\citeproc{mm}{%
+  \begingroup\def\citeproctext{#2}\cite{#1}\endgroup}
+\makeatletter
+ % allow citations to break across lines
+ \let\@cite@ofmt\@firstofone
+ % avoid brackets around text for \cite:
+ \def\@biblabel#1{}
+ \def\@cite#1#2{{#1\if@tempswa , #2\fi}}
+\makeatother
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{3em}
+\newenvironment{CSLReferences}[2] % #1 hanging-indent, #2 entry-spacing
+ {\begin{list}{}{%
+  \setlength{\itemindent}{0pt}
+  \setlength{\leftmargin}{0pt}
+  \setlength{\parsep}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1
+   \setlength{\leftmargin}{\cslhangindent}
+   \setlength{\itemindent}{-1\cslhangindent}
+  \fi
+  % set entry spacing
+  \setlength{\itemsep}{#2\baselineskip}}}
+ {\end{list}}
+\usepackage{calc}
+\newcommand{\CSLBlock}[1]{\hfill\break\parbox[t]{\linewidth}{\strut\ignorespaces#1\strut}}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{\strut#1\strut}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{\strut#1\strut}}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+\ifLuaTeX
+\usepackage[bidi=basic,shorthands=off,]{babel}
+\else
+\usepackage[bidi=default,shorthands=off,]{babel}
+\fi
+\ifLuaTeX
+  \usepackage{selnolig} % disable illegal ligatures
+\fi
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\renewcommand{\thesection}{\roman{section}}
+\setcounter{section}{0}
+\makeatletter
+\renewcommand{\@seccntformat}[1]{\csname the#1\endcsname\quad}
+\makeatother
+% Indent first paragraph too; comment this line if you prefer no indent on first
+\usepackage{indentfirst}
+% Enforce paragraph indenting after template adjustments
+\AtBeginDocument{\setlength{\parindent}{1.5em}\setlength{\parskip}{0pt}}
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  pdftitle={Distributed Synthesis - Milestone 2},
+  pdfauthor={Thomas Capogreco},
+  pdflang={en-US},
+  pdfkeywords={keyword1, keyword2, keyword3},
+  colorlinks=true,
+  linkcolor={blue},
+  filecolor={Maroon},
+  citecolor={blue},
+  urlcolor={blue},
+  pdfcreator={LaTeX via pandoc}}
+
+\title{Distributed Synthesis - Milestone 2}
+\author{Thomas Capogreco}
+\date{2025-08-29}
+
+\begin{document}
+\maketitle
+\begin{abstract}
+This is the abstract for your milestone 2 document. Replace this with
+your actual abstract.
+\end{abstract}
+
+{
+\hypersetup{linkcolor=}
+\setcounter{tocdepth}{3}
+\tableofcontents
+}
+\setstretch{1.5}
+\section*{Abstract}\label{abstract}
+\addcontentsline{toc}{section}{Abstract}
+
+Browser-based distributed synthesis is a novel, lithe technique for
+co-located networked music performance that leverages the ubiquity,
+connectivity, and computational capacity of our personal devices to
+achieve multi-channel sonic works. It continues a lineage of historical
+networked and participatory music performance practices that make use of
+contemporaneous technology to agitate hegemonic, commodified forms of
+music performance ritual. The paradigm employs the substrate of the
+internet as its artistic materials, aligning the practice with the
+educational project of creative coding, and entangling it in the messy
+problematics of surveillance and platform capitalism. This research
+employs a critical posthumanist frame to clarify an ethical position
+from which creative work can be produced in this arena, with particular
+focus on the themes of texture, ritual, and emergence.
+
+\section*{Introduction}\label{introduction}
+\addcontentsline{toc}{section}{Introduction}
+
+The purpose of this document is to articulate a literature review that
+situates distributed synthesis within the confluence of
+material-discursive cultural practices that move through time in
+parallel, but which interact with each other in a weaving, bifurcating,
+and converging manner. We can understand \emph{synthesis}, for example,
+to denote not merely the production of an audio signal comprised of
+fluctuating voltages in a wire, but also both the productive practices
+that give rise to various material forms of the synthesiser, \emph{and}
+the various uses of those material forms in production of
+\emph{expressive} cultural forms. Similarly, we might understand
+\emph{creative coding} to denote not merely the production of specific
+pixels of particular colours on a screen, but also both the cultural
+practices which scaffold audiences' interactions and experiences with
+creative coding \emph{and} the productive practices that give rise to
+the various programming languages and computing hardware on which those
+cultural practices are predicated.
+
+As I will argue in a later chapter, the word ``expression'', when used
+in these contexts, denotes the construction of a mirage - an unalienated
+human subject - the performer or artist, as percieved within the context
+of some type of performance or exhibition ritual.
+
+I bring these notes forwards into the literature review so that we can
+give these practices their properly ecological standing - neither the
+history of synthesis, nor the history of computing (creative or
+otherwise), can be fully understood as a succession of white male heroes
+who made great discoveries or inventions by scouring the internal
+resources of their own, encapsulated genius. Rather, I will attempt to
+give a more mundane perhaps, but more realistic, and ultimately much
+richer account in which these figures do not play the role of hero, but
+rather of \emph{worker} - a type of touching-feeling end-node, working
+intimately with the textures of materials.
+
+This work occurs, without exception, within in the context of some
+productive, self-propagating, polyphonic assemblage which, at certain
+historical moments, managed to find a way to resonate to the point of
+self-oscillation among an ecology of entangled cybernetic circuits
+thread between and across various cultural, economic, and institutional
+systems. like a mass of mycelium producing a fruiting body.
+(\citeproc{ref-tsingMushroomEndWorld2017}{Tsing, 2017})
+
+\setcounter{section}{0}
+
+\section{Networked \& Participatory Music
+Performance}\label{networked-participatory-music-performance}
+
+\subsection{Key Concepts \& Terminology}\label{key-concepts-terminology}
+
+\subsubsection{Networked Music Performance
+(NMP)}\label{networked-music-performance-nmp}
+
+\subsubsection{Mobile Music}\label{mobile-music}
+
+\subsubsection{Participatory NMP}\label{participatory-nmp}
+
+\subsubsection{Local Nework Music}\label{local-nework-music}
+
+\subsection{Pioneering Works \&
+Practitioners}\label{pioneering-works-practitioners}
+
+\subsubsection{Pre-Smartphone Era}\label{pre-smartphone-era}
+
+\subsubsection{The Rise of Laptop
+Orchestras}\label{the-rise-of-laptop-orchestras}
+
+\subsubsection{The Smartphone Orchestra}\label{the-smartphone-orchestra}
+
+\subsubsection{Web-Based Participation}\label{web-based-participation}
+
+\subsection{Frameworks \& Platforms}\label{frameworks-platforms}
+
+\subsubsection{soundworks (IRCAM)}\label{soundworks-ircam}
+
+\subsubsection{Collab-Hub}\label{collab-hub}
+
+\subsubsection{PeerJS / SimplePeer}\label{peerjs-simplepeer}
+
+\subsection{Relevance}\label{relevance}
+
+\subsubsection{Shift in Framing}\label{shift-in-framing}
+
+\subsubsection{Technological
+Contemporaneity}\label{technological-contemporaneity}
+
+\subsubsection{Media Archeology \& Critical Infrastructure
+Studies}\label{media-archeology-critical-infrastructure-studies}
+
+\section{Creative Coding \& Live Coding as Cultural
+Practice}\label{creative-coding-live-coding-as-cultural-practice}
+
+\subsection{Ethos of Inclusion}\label{ethos-of-inclusion}
+
+\subsubsection{Historical Precedent}\label{historical-precedent}
+
+\subsubsection{Foundation Texts}\label{foundation-texts}
+
+\subsubsection{Radical Commitment to
+Access}\label{radical-commitment-to-access}
+
+\subsubsection{Pedagogy \& Community}\label{pedagogy-community}
+
+\subsection{Live Coding as a Community of
+Practice}\label{live-coding-as-a-community-of-practice}
+
+\subsubsection{The Practice}\label{the-practice}
+
+\subsubsection{TOPLAP \& the Manifesto}\label{toplap-the-manifesto}
+
+\subsubsection{TidalCycles as a Vehicle}\label{tidalcycles-as-a-vehicle}
+
+\subsection{Competing Frameworks}\label{competing-frameworks}
+
+\subsubsection{Research-Creation}\label{research-creation}
+
+\subsubsection{Critical Making}\label{critical-making}
+
+\section{Practitioners of Critical
+Posthumanism}\label{practitioners-of-critical-posthumanism}
+
+\subsection{Synthesis}\label{synthesis}
+
+\subsection{Computer Music}\label{computer-music}
+
+\subsubsection{John Chowning of Center for Computer Research in Music \&
+Acoustics
+(CCRMA)}\label{john-chowning-of-center-for-computer-research-in-music-acoustics-ccrma}
+
+\subsubsection{Miller Puckette of Institute for Research and
+Coordination in Acoustics/Music
+(IRCAM)}\label{miller-puckette-of-institute-for-research-and-coordination-in-acousticsmusic-ircam}
+
+\subsubsection{James McCartney of
+SuperCollider}\label{james-mccartney-of-supercollider}
+
+\subsubsection{Alex McLean of
+TidalCycles}\label{alex-mclean-of-tidalcycles}
+
+\subsection{Eurorack}\label{eurorack}
+
+\subsubsection{Tom Erbe of SoundHack}\label{tom-erbe-of-soundhack}
+
+\subsubsection{Tony Rolando of
+MakeNoise}\label{tony-rolando-of-makenoise}
+
+\subsubsection{Peter Edwards of Casper
+Electronics}\label{peter-edwards-of-casper-electronics}
+
+\subsubsection{Brian Crabtree of Monome}\label{brian-crabtree-of-monome}
+
+\subsubsection{Andrew Fitch of
+NONLINEARCIRCUITS}\label{andrew-fitch-of-nonlinearcircuits}
+
+\subsection{Creative Coding}\label{creative-coding}
+
+\subsubsection{Rosa Menkman}\label{rosa-menkman}
+
+\subsubsection{Dan Shiffman}\label{dan-shiffman}
+
+\subsubsection{Lauren Lee McCarthy of
+p5}\label{lauren-lee-mccarthy-of-p5}
+
+\subsubsection{Sam Levine}\label{sam-levine}
+
+\section{Critical Theories of Technology, \&
+Sound}\label{critical-theories-of-technology-sound}
+
+\subsection{Platform \& Surveillance
+Capitalism}\label{platform-surveillance-capitalism}
+
+\subsection{Sound, Listening, \& Power}\label{sound-listening-power}
+
+\subsection{Media Archaeology \&
+Posthumanism}\label{media-archaeology-posthumanism}
+
+\section{Ritual, Performance, \& Media
+Studies}\label{ritual-performance-media-studies}
+
+\subsection{Performance as Ritual}\label{performance-as-ritual}
+
+\subsection{Affect Theory \& Emergence}\label{affect-theory-emergence}
+
+\subsection{Media Ecology \& Liveness}\label{media-ecology-liveness}
+
+\subsubsection{Media Ecology}\label{media-ecology}
+
+\subsubsection{Liveness in a Digital
+Context}\label{liveness-in-a-digital-context}
+
+\section*{Discussion}\label{discussion}
+\addcontentsline{toc}{section}{Discussion}
+
+Discuss the implications of your results.
+
+\section*{Conclusion}\label{conclusion}
+\addcontentsline{toc}{section}{Conclusion}
+
+Summarize your work and future directions.
+
+\section*{References}\label{references}
+\addcontentsline{toc}{section}{References}
+
+\protect\phantomsection\label{refs}
+\begin{CSLReferences}{1}{0}
+\bibitem[\citeproctext]{ref-tsingMushroomEndWorld2017}
+Tsing, A. L. (2017). \emph{The {Mushroom} at the {End} of the {World}:
+{On} the {Possibility} of {Life} in {Capitalist Ruins}} (Reprint
+edition). Princeton University Press.
+
+\end{CSLReferences}
+
+\end{document}

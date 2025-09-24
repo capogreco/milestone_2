@@ -3,7 +3,7 @@
 # Variables
 SOURCE = milestone_2.md
 OUTPUT = milestone_2.pdf
-BIBLIOGRAPHY = bibliography.bib
+BIBLIOGRAPHY = distributed_synthesis.bib
 CSL = apa.csl
 
 # Default target
@@ -20,7 +20,7 @@ $(OUTPUT): $(SOURCE) $(BIBLIOGRAPHY) $(CSL)
 		--pdf-engine=xelatex \
 		--number-sections \
 		--toc \
-		--filter=pandoc-citeproc \
+		--citeproc \
 		--metadata-file=metadata.yaml \
 		2>/dev/null || \
 	pandoc $(SOURCE) \
@@ -29,7 +29,8 @@ $(OUTPUT): $(SOURCE) $(BIBLIOGRAPHY) $(CSL)
 		--csl=$(CSL) \
 		--pdf-engine=xelatex \
 		--number-sections \
-		--toc
+		--toc \
+		--citeproc
 
 # Clean generated files
 clean:

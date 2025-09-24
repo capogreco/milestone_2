@@ -1,0 +1,12 @@
+[
+  {
+    "label": "cite",
+    "command": "deno",
+    "args": [
+      "run",
+      "--allow-read",
+      "--allow-run",
+      "./cite.ts"
+    ]
+  }
+]
