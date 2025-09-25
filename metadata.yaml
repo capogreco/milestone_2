@@ -25,7 +25,9 @@ urlcolor: blue
 citecolor: black
 header-includes:
   - |
-    \renewcommand{\thesection}{\roman{section}}
+    \renewcommand{\thesection}{\arabic{section}}
+    \renewcommand{\thesubsection}{\thesection.\roman{subsection}}
+    \renewcommand{\thesubsubsection}{\thesubsection.\alph{subsubsection}}
     \setcounter{section}{0}
   - |
     ```{=latex}
@@ -41,3 +43,4 @@ header-includes:
     \AtBeginDocument{\setlength{\parindent}{1.5em}\setlength{\parskip}{0pt}}
     ```
 ---
+
