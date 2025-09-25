@@ -27,10 +27,13 @@ This work inevitably occurs in the context of a productive, self-propagating, po
 
 In the literature review that follows, I attempt to tell a story of mycelial assemblages -- material-discursive practices producing both material and cultural forms -- their fruiting bodies.  These fruiting bodies release spores via cultural activity, and it is here that the cyborgian circuit is closed:  these spores retain some DNA of their originary mycelial assemblage -- techniques, values, aesthetic logics, and, importantly, notions of what "work" could be.  In this way, I hope to situate the coordinates of my research project, distributed synthesis, here in the soil of the transitional ecology that lives in and around the walls of the School of Design at RMIT.
 
-
 # Synthesis
 
-My fascination with analog synthesisers began in what Rodgers, and other synthesiser historians, term the "analog revival" of the early 2000s. [@pinchAnalogDaysInvention2002; @rodgersTinkeringCulturalMemoryGender2015; @frekeSynthesizerEvolutionAnalogue2020]
+My fascination with analog synthesisers began in what Rodgers, and other synthesiser historians, term the "analog revival" of the early 2000s. [@pinchAnalogDaysInvention2002; @rodgersTinkeringCulturalMemoryGender2015; @frekeSynthesizerEvolutionAnalogue2020]  At the time, just as now, the attraction seemed to be just as much about the objects themselves -- their *material forms* -- as the role they play in making various styles of music -- those *cultural forms* that ostensibly inform synthesisors' design and purpose.  This dynamic is evident in the current trope depicting synthesiser enthusiasts as obsessive neurotics hoarding vast collections of synthesisers, but never releasing any music.  [@mylarmelodiesPerhapsReleasingMusic2025]  We might also acknowledge the birth of the term "gear acquisition syndrom" (GAS), as denoting the same phenomenon -- a tendency towards an autotelic relation which luxuriates in the material form, and which is in no hurry to produce the cultural form which
+
+But even more than its material or cultural forms, it is before the spontaneous phenomena of synthesised sound that we must make ourselves accountable.
+
+
 
 
 ## The Apocryphal Pythagoras
