@@ -27,19 +27,15 @@ This work inevitably occurs in the context of a productive, self-propagating, po
 
 In the literature review that follows, I attempt to tell a story of mycelial assemblages -- material-discursive practices producing both material and cultural forms -- their fruiting bodies.  These fruiting bodies release spores via cultural activity, and it is here that the cyborgian circuit is closed:  these spores retain some DNA of their originary mycelial assemblage -- techniques, values, aesthetic logics, and, importantly, notions of what "work" could be.  In this way, I hope to situate the coordinates of my research project, distributed synthesis, here in the soil of the transitional ecology that lives in and around the walls of the School of Design at RMIT.
 
-# Synthesis
+# Synthesis: A Voice from the Object Source
 
-My fascination with analog synthesisers began in what Rodgers, and other synthesiser historians, term the "analog revival" of the early 2000s. [@pinchAnalogDaysInvention2002; @rodgersTinkeringCulturalMemoryGender2015; @frekeSynthesizerEvolutionAnalogue2020]  At the time, just as now, the attraction seemed to be just as much about the objects themselves -- their *material forms* -- as the role they play in making various styles of music -- those *cultural forms* that ostensibly inform synthesisors' design and purpose.  This dynamic is evident in the current trope depicting synthesiser enthusiasts as obsessive neurotics hoarding vast collections of synthesisers, but never releasing any music.  [@mylarmelodiesPerhapsReleasingMusic2025]  We might also acknowledge the birth of the term "gear acquisition syndrom" (GAS), as denoting the same phenomenon -- a tendency towards an autotelic relation which luxuriates in the material form, and which is in no hurry to produce the cultural form which
+My fascination with analog synthesisers began in what Rodgers, and other synthesiser historians, term the "analog revival" of the early 2000s. [@pinchAnalogDaysInvention2002; @rodgersTinkeringCulturalMemoryGender2015; @frekeSynthesizerEvolutionAnalogue2020]  At the time, just as now, the attraction seemed to be just as much about the objects themselves -- their *material forms* -- as the role they play in making various styles of music -- those *cultural forms* that ostensibly inform synthesisors' design and purpose.  This dynamic is evident in the internet forum trope depicting synthesiser enthusiasts as obsessive neurotics hoarding vast collections of synthesisers, but never releasing any music.  [@mylarmelodiesPerhapsReleasingMusic2025]  We might also acknowledge the birth of the term "gear acquisition syndrome" (GAS), as denoting a similar phenomenon -- a spontaneous propensity to inhabit an autotelic relation which luxuriates in the material form, and which is in no hurry to fulfil its extant teleology in a concretely expressed cultural form. [@herbstGearAcquisitionSyndrome2021]
 
-But even more than its material or cultural forms, it is before the spontaneous phenomena of synthesised sound that we must make ourselves accountable.
+When speaking about synthesis, even more than its material or cultural forms, it is before the spontaneous phenomenon of synthesised sound that we must make ourselves accountable.  It is here that I wish to make a distinction between *expression*, which indexes the human within the semantics of ritual; and *texture*, which indexes materiality within the pragmatics of touch. [@sedgwickTouchingFeelingAffect2003; @RizvanaBradleyVicissitudes2020]  It is through the lens of this dichotomy that I wish to frame an historic account of synthesis.
 
+## The Apocryphal Pythagoras in the Allegorical Forge
 
-
-
-## The Apocryphal Pythagoras
-
-
-
+The story about Pythagoras being in the blacksmith and correlating the pitch of the sounds they make with their weights is clearly allegorical, as Pythagoras himself probably didn't exist as a single person, and in any case, the pitch a hammer makes is contingent on other properties such as its dimensions and shape.  What is noteworthy about this myth is
 
 
 
