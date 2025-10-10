@@ -40,7 +40,7 @@ When speaking about synthesis, even more than its material or cultural forms, it
 
 Synthesis, understood in this way, represents the continuation of what Tomlinson describes as a co-evolutionary feedback process that entangles the development of musical practices (cultural forms) not only with the production of musical instruments (material forms), but with the appearance of modern subjectivity. [-@tomlinsonMillionYearsMusic2015]
 
-To illustrate the mechanics here, I would like to invoke Brandom's rejuvination of Kant's key philosophical contribution - that we are constituted, as language users, by the normative commitments required for language use. [@brandomArticulatingReasonsIntroduction2009]  The argument being that pre-verbal children -- infants and toddlers -- do not hear *language* per se.  What they hear, is *music*.  They do not parse words and signifiers and syntax, etc. but rather, what they have to work with are sounds -- sounds with pitch, rhythm, timbre, volume, etc.  -- the constituent elements of music.  Caregivers will accentuate the musicality of their prosody when directing their speech towards infants, and will repeat, and gesticulate.
+To illustrate the mechanics here, I would like to invoke Brandom's rejuvination of Kant's key philosophical contribution - that we are constituted, as language users, by the normative commitments required for language use. [@brandomArticulatingReasonsIntroduction2009]  The argument being that pre-verbal children -- infants and toddlers -- do not hear *language* per se.  What they hear, is *music*.  They do not parse words and signifiers and syntax, etc. but rather, what they have to work with are sounds -- sounds with pitch, rhythm, timbre, volume, etc.  -- the constituent elements of music.  Caregivers will accentuate the musicality of their prosody when directing their speech towards infants, and will repeat, and accompany their speech with pronounced gesticulations.
 
 I would like to highlights two important points: 1) what the infant finds in the sound of their caregivers' prosody is a primeval sense of correctness -- an invitation to adopt the set of normative commitments required for language use; and 2) that what the adoption of these commitments entitles the language user to is exactly the affordance of *representation*.  In this way I wish to define: 1) music as that which by permeating a primeval sense of correctness, invites you to adopt some set of implicit normative commitments; and 2) language, as being a superset of music -- music with the added affordance of representation.
 
@@ -67,8 +67,7 @@ We might note a few things 1) some spontaneous similarity here with Freud's myth
 
 It is from within the context of the Idaean Dactyls that we must understnd the allegorical function of the story of Pythagoras in the forge.  The story goes that as Pythagoras was walking past the smithy, he heard something musical in the clamour of the various hammers hitting their respective anvils.  This music drew him into the smithy, it *hauled his body* -- to borrow a phrase from Loveless [-@lovelessHowMakeArt2019] -- towards the materialality of the hammers.  Upon investigation, Pythagoras ascertained that the pitch of the hammers' sounds were proportionally correlated with their weights. [@burkertLoreScienceAncient1972]
 
-The story itself is highly dubious -- the pitch a hammer makes is is not strictly proportional with its weight, but contingent on other properties such as its dimensions and shape.  What is perhaps more noteworthy about this story than this "insight", is how it acted historically to intervene in the functioning the pre-existing, hegemonic mythos of the Idaean Dactyls. [@burkertLoreScienceAncient1972]  The story of Pythagoras in the forge shifts the locus of episteme from divine providence, to the province of Human Intuition.  It is important that we pause here to feel the normative force of Rosi Braidotti rolling her eyes: it is Pythagoras' genius that allows him to correlate pitch with string or pipe length, and the subsequent belief that harmony must be constituted by frequency relationships involving low integer fractions.
-
+The story itself is highly dubious -- the pitch a hammer makes is is not strictly proportional with its weight, but contingent on other properties such as its dimensions and shape.  What is perhaps more noteworthy about this story than this "insight", is how it acted historically to intervene in the functioning the pre-existing, hegemonic mythos of the Idaean Dactyls. [@burkertLoreScienceAncient1972]  The story of Pythagoras in the forge shifts the locus of responsibility from divine providence, to the province of Human Intuition.  It is important that we pause here to feel the normative force of Rosi Braidotti rolling her eyes: it is Pythagoras' genius that allows him to correlate pitch with string or pipe length, and the subsequent belief that harmony must be constituted by frequency relationships involving low integer fractions.
 
 - they turned this insight into a religion where they worshipped mathematics, especially the integers 1, 2, 3, and 4.
 - they literally constructed the man "Pythagoras", who came to occupy the role of governing signifier
@@ -79,7 +78,7 @@ The story itself is highly dubious -- the pitch a hammer makes is is not strictl
 
 ## Helmholtz & The Ear
 - Helmholtz: the ear as instrument for the Vitruvian subject inside the brain
-- Strumpf
+- Strumpf: sound as
 - the ear as constitutive of embodied cognition / the mirror on which subjectivity is constructed
 
 ## Pierre Schaeffer & Maryanne Amacher
@@ -89,12 +88,27 @@ The story itself is highly dubious -- the pitch a hammer makes is is not strictl
 
 ## Varese & Crystallisation
 - definitions of music
+- John Cage 4'33"
 
+## The Telharmonium
+
+## The Theremin
+
+## Bell Labs & The BBC Radiophonic Workshop
+
+## East Coast vs West Coast
+
+## Expanded Synthesis: Radigue, Amacher, & Spiegel
+
+# Computer Music: Digital Synthesis
+## Iannis Xenakis: Using Probability Distribution
+## John Chowning of Center for Computer Research in Music & Acoustics (CCRMA)
+## Miller Puckette of Institute for Research and Coordination in Acoustics/Music (IRCAM)
+## James McCartney of SuperCollider
+## Alex McLean of TidalCycles
 
 
 # Networked & Participatory Music Performance
-
-
 ## Key Concepts & Terminology
 ### Networked Music Performance (NMP)
 ### Mobile Music
@@ -118,7 +132,6 @@ The story itself is highly dubious -- the pitch a hammer makes is is not strictl
 ### Media Archeology & Critical Infrastructure Studies
 
 # Creative Coding & Live Coding as Cultural Practice
-
 ## Ethos of Inclusion
 ### Historical Precedent
 ### Foundation Texts
@@ -130,19 +143,11 @@ The story itself is highly dubious -- the pitch a hammer makes is is not strictl
 ### TOPLAP & the Manifesto
 ### TidalCycles as a Vehicle
 
-## Competing Frameworks
+## Related Frameworks
 ### Research-Creation
 ### Critical Making
 
 # Practitioners of Critical Posthumanism
-
-## Synthesis
-
-## Computer Music
-### John Chowning of Center for Computer Research in Music & Acoustics (CCRMA)
-### Miller Puckette of Institute for Research and Coordination in Acoustics/Music (IRCAM)
-### James McCartney of SuperCollider
-### Alex McLean of TidalCycles
 
 ## Eurorack
 ### Tom Erbe of SoundHack
@@ -150,7 +155,6 @@ The story itself is highly dubious -- the pitch a hammer makes is is not strictl
 ### Peter Edwards of Casper Electronics
 ### Brian Crabtree of Monome
 ### Andrew Fitch of NONLINEARCIRCUITS
-
 
 ## Creative Coding
 ### Rosa Menkman

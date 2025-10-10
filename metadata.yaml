@@ -6,8 +6,18 @@ institution: "University Name"
 department: "Department Name"
 degree: "PhD"
 abstract: |
-  This is the abstract for your milestone 2 document.
-  Replace this with your actual abstract.
+  Browser-based distributed synthesis is a novel, lithe technique for co-located
+  networked music performance that leverages the ubiquity, connectivity, and
+  computational capacity of our personal devices to achieve multi-channel sonic
+  works. It continues a lineage of historical networked and participatory music
+  performance practices that make use of contemporaneous technology to agitate
+  hegemonic, commodified forms of music performance ritual. The paradigm
+  repurposes the substrate of the internet as its artistic materials, aligning
+  the practice with the educational project of creative coding, and entangling it
+  in the messy problematics of surveillance and platform capitalism. This
+  research employs a critical posthumanist frame to clarify an ethical position
+  from which creative work can be produced in this arena, with particular focus
+  on the themes of texture, ritual, and emergence.
 keywords: ["keyword1", "keyword2", "keyword3"]
 lang: en-US
 documentclass: article
@@ -43,4 +53,3 @@ header-includes:
     \AtBeginDocument{\setlength{\parindent}{1.5em}\setlength{\parskip}{0pt}}
     ```
 ---
-

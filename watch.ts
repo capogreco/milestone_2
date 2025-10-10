@@ -1,31 +1,52 @@
 #!/usr/bin/env deno run --allow-read --allow-run
 
-const WATCH_FILE = "./milestone_2.md";
-const ABSOLUTE_WATCH_FILE = "/Users/capo_greco/Documents/milestone_2/milestone_2.md";
-const BUILD_COMMAND = ["make", "pdf"];
+type WatchTarget = {
+  relativePath: string;
+  absolutePath: string;
+  buildCommand: string[];
+  outputPdf: string;
+};
 
-console.log("🔄 Starting file watcher for milestone_2.md");
-console.log("📝 Will regenerate PDF on file changes...\n");
+const WATCH_TARGETS: WatchTarget[] = [
+  {
+    relativePath: "./milestone_2.md",
+    absolutePath: "/Users/capo_greco/Documents/milestone_2/milestone_2.md",
+    buildCommand: ["make", "pdf"],
+    outputPdf: "milestone_2.pdf",
+  },
+  {
+    relativePath: "./research_summary.md",
+    absolutePath: "/Users/capo_greco/Documents/milestone_2/research_summary.md",
+    buildCommand: ["make", "summary"],
+    outputPdf: "research_summary.pdf",
+  },
+];
 
-async function buildPdf() {
-  console.log("🔨 Building PDF...");
-  
+console.log("🔄 Starting file watcher for Markdown sources:");
+for (const target of WATCH_TARGETS) {
+  console.log(`- ${target.relativePath} -> ${target.outputPdf}`);
+}
+console.log("📝 Will regenerate PDFs on file changes...\n");
+
+async function buildPdf(target: WatchTarget) {
+  console.log(`🔨 Building PDF for ${target.relativePath}...`);
+
   try {
-    const process = new Deno.Command(BUILD_COMMAND[0], {
-      args: BUILD_COMMAND.slice(1),
+    const process = new Deno.Command(target.buildCommand[0], {
+      args: target.buildCommand.slice(1),
       stdout: "piped",
       stderr: "piped",
     });
-    
+
     const { code, stdout, stderr } = await process.output();
-    
+
     if (code === 0) {
-      console.log("✅ PDF generated successfully!");
-      
+      console.log(`✅ ${target.outputPdf} generated successfully!`);
+
       // Touch file for Skim auto-refresh
       try {
         const touchProcess = new Deno.Command("touch", {
-          args: ["milestone_2.pdf"],
+          args: [target.outputPdf],
         });
         await touchProcess.output();
         console.log("🔄 PDF updated for Skim");
@@ -43,17 +64,25 @@ async function buildPdf() {
 }
 
 // Build initial PDF
-await buildPdf();
+for (const target of WATCH_TARGETS) {
+  await buildPdf(target);
+}
 
 // Watch for file changes
-const watcher = Deno.watchFs(WATCH_FILE);
+const watcher = Deno.watchFs(WATCH_TARGETS.map((target) => target.relativePath));
 
 for await (const event of watcher) {
   console.log(`📊 Event: ${event.kind}, Paths: ${event.paths}`);
-  
-  if (event.kind === "modify" && 
-      (event.paths.includes(WATCH_FILE) || event.paths.includes(ABSOLUTE_WATCH_FILE))) {
-    console.log(`📄 ${WATCH_FILE} changed, rebuilding...`);
-    await buildPdf();
+
+  if (event.kind === "modify") {
+    for (const target of WATCH_TARGETS) {
+      if (
+        event.paths.includes(target.relativePath) ||
+        event.paths.includes(target.absolutePath)
+      ) {
+        console.log(`📄 ${target.relativePath} changed, rebuilding...`);
+        await buildPdf(target);
+      }
+    }
   }
 }
