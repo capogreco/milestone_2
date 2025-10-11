@@ -41,6 +41,8 @@ The pedagogical rational pivots on the project's ability to scaffold cultural pr
 <!--An explanation of how your research is situated in the context of your discipline or community of practice -->
 # Research Situation
 
+##  Genealogy of Practice
+
 ![Distributed Synthesis Genealogy Chart](ds_genealogy.png)
 
 My sonic practice of distributed synthesis inherits from a variety of cultural lineages -- see *figure 1*.  Particular importance is placed on:
@@ -51,7 +53,15 @@ My sonic practice of distributed synthesis inherits from a variety of cultural l
 - the esablishment of the Eurorack standard for modular synthesis in the mid 90s, and the community of practice which has grown around it since then [@jenkinsAnalogSynthesizersUnderstanding2020; @bjornPatchTweakExploring2018]
 - the efforts of Maeda [-@maedaDesignNumbers1999; -@maedaCreativeCode2004], Reas & Fry [-@reasProcessingProgrammingHandbook2007; -@reasModernPrometheus2018], Shiffman [-@shiffmanLearningProcessingBeginners2015; -@shiffmanNatureCodeSimulating2024], McCarthy [-@mccarthyYouMeMy2020; -@mccarthyMakingSpaceFuture2019; -@mccarthyP5js10Here2020; -@mccarthyMakeGettingStarted2015; -@mccarthyCreatingArtOpen2018], Tarakajian [-@tarakajianP5jsWebEditor2020, -@tarakajianAccessibilityImprovementsP5js2020], et al. in establishing a world-wide community of practice for creative coding
 - the array of thinkers and practitioners who have, over the years, attempted to investigate, understand, and agitate our entangled relation to the telephone [@mcluhanUnderstandingMediaExtensions1994; @ronellTelephoneBookTechnology1989; @kittlerDiscourseNetworks18001990; @dolarVoiceNothingMore2006]
-- the
+- the lineage of composers, artists, and musicians who have contributed to the set of participatory and networked music performance repertoire.
+
+## Stakeholder Impact
+
+The sets of stakeholders potentially impacted by this research (see *Figure 2*) can be categorised in the same manner as its tripartite rationale (see *Rationale*) -- *creative* (purple), *pedagogical* (green), and *sociological* (yellow).  By brokering repertoire pertaining to cultural forms (co-located music performance rituals) from the sonic arts community of practice (CoP) to the creative coding CoP, and brokering repertoire pertaining to material forms (the browser, javascript, connectivity architectures, etc.) in the other direction, I hope primarily to expand the repertoire available to practitioner members of either CoPs.
+
+This expansion should, secondarily, expand the curricular resources for teachers and curriculm setters in primary, secondary, and tertiary education systems, which, along with increased cultural visibility of javascript use, may increase students' intrinsic motivations to learn those forms of digital literacy.
+
+The effect of this expanded repertoire in the citizens' cultural life-worlds, should be a more ambitious, expanded creative horizon -- we should be able to imagine the feasibility of some things previously understood to be impossible.  This along with improved digital literacy should bolster the technology generating capacities of diverse communities, and increase the technical sophistication of public discourse, politicians, and ultimately, legislation.
 
 ![Distributed Synthesis Stakeholder Impact Chart](ds_stakeholders.png)
 
@@ -60,14 +70,100 @@ My sonic practice of distributed synthesis inherits from a variety of cultural l
 <!--Updated methodology (how you will undertake the proposed project) -->
 # Methodology
 
-- Mycelial Creativity
-- Iterative Design
-- Diffractive Reading
+## Diffractive Reading
+This research proceeds from a monist disposition, and acknowledges the musical substrate in which discursive participation is predicated, always simultaneously *constructing* the subjective apparatus of intelligibility, and *deploying* it to parse meaning. [@serresInformationThinking2017] This intractable, liquid exchange, between content and context, does not permit a retreat into the invisible view of everything from nowhere, but rather necessitates an ironic, strategic cutting together-apart of theory, concepts, relations, and identities, in the construction of a contingent, fallible, opinionated theoretical position *with an argument*. [@harawaySituatedKnowledgesScience1988; @baradDiffractingDiffractionCutting2014]
+
+The approach finds odd bedfellows with Rorty's *Ironism*, in which he elucidates the absurdity of the concept of a final vocabulary.  [-@rortyContingencyIronySolidarity1989] Truth, for Rorty, can only ever be an attribute of sentences, and as such is therefore relegated to appear and disappear within the confines of our deliberative rituals. [@brandomRortyHisCritics2000]  The role of reading then, is to fit semantic candidates with pragmatic affordances, within a pre-existing network of normative conceptual relations --    in other words, to navigate those commitments that this project must become responsible for (potestas), in order to understand what these responsibilities entitle the project to become (potencia). [@brandomArticulatingReasonsIntroduction2009; @braidottiTheoreticalFrameworkCritical2019]
+
+## Mycelial Creativity
+
+Central to the functioning of this research is the possibility of a mycelial creativity, that is, a way of understanding what creativity *is*, and how it *works*, that draws on the figure of fungal mycelium.[@ingoldTwoReflectionsEcological2004; @clarkePsychologyCreativeProcesses2018]
+
+In this way we can understand creativity to occur as the practitioner accumulates many thousands of individual, specific, transactional relationships with the pragmatic affordances of their cultural, technological, physical, social, digital, institutional, economic, domestic, etc. environments, in an omnidirectional and indiscriminate manner, such that both the practitioner, and their environments, undergo gradual transformation.  [@sheldrakeEntangledLifeHow2020; @tsingMushroomEndWorld2017]  Where the mycelium becomes dense enough, and given the right environmental conditions, a fruiting body grows and releases *spores* -- cultural forms, containing *DNA* -- visible traces of the commitments and processes that constitute the apparatus of their production.
+
+This shifts the locus of creativity from within the encapsulated bounds of human ingenuity, to the distributed, ecological effects of mycelial relations, refocusing the task for creative practitioners, from the heroic scouring or internal resources to find a sublime spark of inspiration, to the much more mundane processes of simply feeling the texture their environs. [@ostendorf-rodriguezLetsBecomeFungal2023; @sedgwickTouchingFeelingAffect2003]
+
+A comparison can be made with design processes that build backwards from deliberately calculated, strategically imagined end result --  mycelial creativity should be understood as a *process* methodology, capable of hosting iterative design cycles, but not requiring them.  Instead, over time, as the mycelium runs and accumulates, should the conditions become favourable, a fruiting body can form almost as from its own accord -- as if from an ecological fugue -- half awake, half dreaming.
+
+As an extreme example, we might spontaneously imagine a Camponotini ant infected with ophiocordycep unilateralis, whose nervous system, now possessed by the fungus, climbs as high into the canopy of the rainforest as possible, before becoming host to the fungus' fruiting body, maximising the area of spore dispersal. [@araujoZombieantFungiContinents2018]  The point here being, not so much that a practitioner should sacrifice their body in service of their creative project, but rather that mycelial creativity works best at a resting state, allowing the practitioner's gut feelings to do the work of processing large quantities of data unconsciously, imprecisely, but massively in parallel, rather than deliberately processing a reduced, potentially incomplete set of data, yes -- more precisely, but much more slowly, via serial, explicit, conscious processes.  We might recall Freud's image of the dream-wish, rising like a mushroom from the navel of the dream, exactly where the web of unconscious conceptual relations has reached critical density. [-@freudInterpretationDreams2019]
+
+
+## Iterative Design
+At the micro-level, much of my day to day creative methods are governed by the logic of iterative design -- I am defining goals by pairing my understanding of audiences and oppotunities in my cultural environment (as per mycelial creativity), with concepts drawn and fashioned from my diffractive reading.  I brainstorm various approaches and technical affordances, and prototype with those conceptual resources at hand, in a manner that is roughly equivalent with the double diamond design cycle. [@designcouncilDoubleDiamond]
+
 
 <!--Updated review of literature and references including a list of key readings and references -->
 # Key Readings
+
+## Critical Sonic Theory
+- Noise: The Political Economy of Music [@attaliNoisePoliticalEconomy1985]
+- The Soundscape: Our Sonic Environment and the Tuning of the World [@schaferSoundscapeOurSonic1993]
 - Pink Noises [@rodgersPinkNoisesWomen2010]
+- One Square Inch of Silence: One Man's Search for Natural Silence in a Noisy World [@hemptonOneSquareInch2010]
+- Sound Unseen: Acousmatic Sound in Theory and Practice [@kaneSoundUnseenAcousmatic2014]
+- A Million Years of Music: The Emergence of Human Modernity [@tomlinsonMillionYearsMusic2015]
+- After Sound: Toward a Critical Music [@barrettSoundCriticalMusic2016]
+- Ocean of Sound: Ambient sound and radical listening in the age of communication [@toopOceanSoundAmbient2018]
+- Hearing the Cloud [@frankelHearingCloudCan2019]
+- Sex Sounds: Vectors of Difference in Electronic Music [@soferSexSoundsVectors2022]
+- Nothing but Noise: Timbre and Musical Meaning at the Edge [@wallmarkNothingNoiseTimbre2022]
+- Hungry Listening: Resonant Theory for Indigenous Sound Studies [@malzacherArtAssembly2023]
+- Experimenting the Human: Art, Music, and the Conteporary Posthuman [@barrettExperimentingHumanArt2023]
+- Sounding the Virtual: Gilles Deleuze and the Theory and Philosophy of Music [@nesbittSoundingVirtualGilles]
+
+## Participatory Practices
+- Participation in Art and Architecture: Spaces of Interaction and Occupation [@stierliParticipationArtArchitecture2016]
+- A history of the Audience as a Speaker Array [@taylorHistoryAudienceSpeaker2017]
+- Interactive Contemporary Art: Participation in Practice [@brownInteractiveContemporaryArt2019]
+- The Art of Assembly [@malzacherArtAssembly2023]
+
+## Composition & Texture
+- Fundamentals of Musical Acoustics [@benadeFundamentalsMusicalAcoustics1990]
+- Silence: Lectures and Writings [@cageSilenceLecturesWritings2013]
+- The Ashgate Research Companion to Minimalist and Postminimalist Music [@potterAshgateResearchCompanion2013]
+- Krautrock: German Music in the Seventies [adeltKrautrockGermanMusic2016]
+- The Oxford Handbook of Algorithmic Music [@mcleanOxfordHandbookAlgorithmic2018]
+- Structure and Synthesis: The Anatomy of Practice [@fellStructureSynthesisAnatomy2021]
 - Social Dissonance [@mattinSocialDissonance2022]
+- Sonic Faction: Audio Essay as Medium and Method [@goodmanSonicFactionAudio2024]
+
+## Telephony
+- The Telephone Book: Technology, Schizophrenia, Electric Speech [@ronellTelephoneBookTechnology1989]
+- A Voice and Nothing More [@dolarVoiceNothingMore2006]
+- The Truth of the Technological World: Essays on the Genealogy of Presence [@kittlerTruthTechnologicalWorld2013]
+- The Mechanism of Human Speech [@kempelenMechanismHumanSpeech2022]
+
+## Creative Coding & Cybernetics
+- Zeros + Ones [@plantZerosOnesDigital1998]
+- How We Became Posthuman: Virtual Bodies in Cybernetics, Literature, and Informatics [@haylesHowWeBecame]
+- The Question Concerning Technology [@heideggerQuestionConcerningTechnology2008]
+- The Glitch Moment(um) [@menkmanGlitchMomentum2011]
+- The Interface Effect [@gallowayInterfaceEffect2012]
+- Speaking Code: Coding as Aesthetic and Political Expression [@coxSpeakingCodeCoding2013]
+- Mobile Media Making in an Age of Smartphones [@berryMobileMediaMaking2014]
+- The Question Concerning Technology in China: An Essay in Cosmotechnics [@huiQuestionConcerningTechnology2016a]
+- Information and Thinking [@serresInformationThinking2017]
+- In The Swarm: Digital Prospects 3 [@hanSwarmDigitalProspects2017]
+- Art and Cosmotechnics [@huiArtCosmotechnics2021]
+- LIVE CODING _a user's manual [@blackwellLiveCodingUsers2022]
+- Cybernetics for the 21st Century, Vol. 1: Epistemological Reconstruction [@pickeringCybernetics21stCentury2024]
+
+## Methodology
+- Diffracting Diffraction: Cutting Together-Apart [@baradDiffractingDiffractionCutting2014]
+- The Mushroom at the End of the World [@tsingMushroomEndWorld2017]
+- How to Make Art at the End of the World [@lovelessHowMakeArt2019]
+- A Theoretical Framework for the Critical Posthumanities [@braidottiTheoreticalFrameworkCritical2019]
+- Touching Feeling: Affect, Pedagogy, Performativity [@robinsonHungryListeningResonant2020]
+- Creative Theories of (Just About) Everything: A Journey into Origins and Imaginations [@luttersCreativeTheoriesJust2020]
+- Let's Become Fungal!: Mycelium Teachings and the Arts [@ostendorf-rodriguezLetsBecomeFungal2023]
+- Becoming an Artwork [@groysBecomingArtwork2023]
+- Reading Spinoza in the Anthropocene [@lloydReadingSpinozaAnthropocene2024]
+
+## Contemporary Situation
+- Good Entertainment: A Deconstruction of the Western Passion [@hanGoodEntertainmentDeconstruction2019]
+- Postcapitalist Desire [@fisherPostcapitalistDesireFinal2020]
+- Capital is Dead: Is this Something Worse? [@warkCapitalDeadThis2021]
+- The Internet Con: How to Seize the Means of Computation [@doctorowInternetConHow2023]
 
 <!--Updated outline/summary of your progress against your research plan -->
 # Progress

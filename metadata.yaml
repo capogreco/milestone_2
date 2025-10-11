@@ -30,8 +30,8 @@ bibliography: distributed_synthesis.bib
 csl: apa.csl
 link-citations: true
 colorlinks: true
-linkcolor: blue
-urlcolor: blue
+linkcolor: black
+urlcolor: black
 citecolor: black
 header-includes:
   - |
