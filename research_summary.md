@@ -21,6 +21,8 @@ abstract:
   - "Browser-based distributed synthesis is a novel, lithe technique for co-located networked music performance that leverages the ubiquity, connectivity, and computational capacity of our personal devices to achieve multi-channel sonic works.  It continues a lineage of historical networked and participatory music performance practices that make use of contemporaneous technology to agitate hegemonic, commodified forms of music performance ritual.  The paradigm repurposes the substrate of the internet as its artistic materials, aligning the practice with the educational project of creative coding, and entangling it in the messy problematics of surveillance and platform capitalism.  This research employs a critical posthumanist frame to clarify an ethical position from which creative work can be produced in this arena, with particular focus on the themes of texture, ritual, and emergence."
 ---
 
+\pagebreak{}
+
 <!--The rationale, objectives and research questions you plan to focus on -->
 # Rationale
 
@@ -97,79 +99,151 @@ At the micro-level, much of my day to day creative methods are governed by the l
 
 ## Critical Sonic Theory
 - Noise: The Political Economy of Music [@attaliNoisePoliticalEconomy1985]
+  - in which Attali frames music as a prophetic industry that foretells economic and political reorganisations.
 - The Soundscape: Our Sonic Environment and the Tuning of the World [@schaferSoundscapeOurSonic1993]
+  - in which Schafer chronicles the modern soundscape to advocate for ecological listening and acoustic responsibility.
 - Pink Noises [@rodgersPinkNoisesWomen2010]
+  - in which Rodgers assembles interviews foregrounding women's agency in electronic sound cultures.
 - One Square Inch of Silence: One Man's Search for Natural Silence in a Noisy World [@hemptonOneSquareInch2010]
+  - in which Hempton narrates a quest for natural quiet as a call to protect fragile acoustic ecologies.
 - Sound Unseen: Acousmatic Sound in Theory and Practice [@kaneSoundUnseenAcousmatic2014]
+  - in which Kane theorises acousmatic sound to reveal the politics of disembodied listening.
 - A Million Years of Music: The Emergence of Human Modernity [@tomlinsonMillionYearsMusic2015]
+  - in which Tomlinson traces co-evolutionary paths of music and human modernity through deep history.
 - After Sound: Toward a Critical Music [@barrettSoundCriticalMusic2016]
+  - in which Barrett proposes critical music as a practice that entwines sound with social critique.
 - Ocean of Sound: Ambient sound and radical listening in the age of communication [@toopOceanSoundAmbient2018]
+  - in which Toop drifts through ambient histories to map radical possibilities for listening.
 - Hearing the Cloud [@frankelHearingCloudCan2019]
+  - in which Frankel reflects on online culture to imagine communal futures for post-internet music.
 - Sex Sounds: Vectors of Difference in Electronic Music [@soferSexSoundsVectors2022]
+  - in which Sofer excavates electrosexual aesthetics to expose gendered assumptions in electronic music.
 - Nothing but Noise: Timbre and Musical Meaning at the Edge [@wallmarkNothingNoiseTimbre2022]
-- Hungry Listening: Resonant Theory for Indigenous Sound Studies [@malzacherArtAssembly2023]
+  - in which Wallmark analyses timbre controversies to show how noise encodes cultural conflict.
+- Hungry Listening: Resonant Theory for Indigenous Sound Studies [@robinsonHungryListeningResonant2020]
+  - in which Robinson articulates decolonial listening obligations that challenge settler ears.
 - Experimenting the Human: Art, Music, and the Conteporary Posthuman [@barrettExperimentingHumanArt2023]
-- Sounding the Virtual: Gilles Deleuze and the Theory and Philosophy of Music [@nesbittSoundingVirtualGilles]
+  - in which Barrett reconsiders experimental music as a lens on posthuman technoculture.
+- The Science-Music Borderlands: Reckoning with the Past and Imagining the Future [@margulisScienceMusicBorderlandsReckoning2023]
+  - in which Margulis et al convenes perspectives which agitate common assumptions regarding humans' relationship to music.
+- Sounding the Virtual: Gilles Deleuze and the Theory and Philosophy of Music [@nesbittSoundingVirtualGilles2010]
+  - in which Nesbitt convenes Deleuzian perspectives to rethink music's philosophical stakes.
 
 ## Participatory Practices
 - Participation in Art and Architecture: Spaces of Interaction and Occupation [@stierliParticipationArtArchitecture2016]
+  - in which Stierli surveys participatory spatial design as a negotiation of power and use.
 - A history of the Audience as a Speaker Array [@taylorHistoryAudienceSpeaker2017]
+  - in which Taylor traces audience-as-instrument experiments across the history of NIME.
+- Understanding Media Multiplicities [@bownUnderstandingMediaMultiplicities2018]
+  - in which Bown theorises on the general properties of media multiplicities.
 - Interactive Contemporary Art: Participation in Practice [@brownInteractiveContemporaryArt2019]
+  - in which Brown curates cases showing participation as an evolving institutionally situated practice.
 - The Art of Assembly [@malzacherArtAssembly2023]
+  - in which Malzacher reflects on assembly-based dramaturgies for collective public action.
 
 ## Composition & Texture
 - Fundamentals of Musical Acoustics [@benadeFundamentalsMusicalAcoustics1990]
+  - in which Benade explains the acoustical physics underpinning instrument design for musicians and builders.
 - Silence: Lectures and Writings [@cageSilenceLecturesWritings2013]
+  - in which Cage collects lectures and chance writings that reposition silence as an active compositional material.
 - The Ashgate Research Companion to Minimalist and Postminimalist Music [@potterAshgateResearchCompanion2013]
-- Krautrock: German Music in the Seventies [adeltKrautrockGermanMusic2016]
+  - in which Potter and Gann compile scholarship mapping minimalist and postminimalist practice across scenes.
+- Krautrock: German Music in the Seventies [@adeltKrautrockGermanMusic2016]
+  - in which Adelt situates Krautrock's textures within the transnational cultural politics of the 1970s.
 - The Oxford Handbook of Algorithmic Music [@mcleanOxfordHandbookAlgorithmic2018]
+  - in which McLean and Dean assemble perspectives on algorithmic music spanning theory, history, and craft.
 - Structure and Synthesis: The Anatomy of Practice [@fellStructureSynthesisAnatomy2021]
+  - in which Fell diagrams procedural strategies that loosen habit within electronic studio practice.
 - Social Dissonance [@mattinSocialDissonance2022]
+  - in which Mattin amplifies alienation as a method for redirecting attention from sound to social relations.
+- The Mechanism of Human Speech [@kempelenMechanismHumanSpeech2022]
+  - in which Kempelen details mechanical speech experiments that prefigure synthetic vocality.
 - Sonic Faction: Audio Essay as Medium and Method [@goodmanSonicFactionAudio2024]
+  - in which Goodman, Barton, and Kronic champion the audio essay as a speculative research medium.
 
 ## Telephony
 - The Telephone Book: Technology, Schizophrenia, Electric Speech [@ronellTelephoneBookTechnology1989]
+  - in which Ronell deconstructs the telephone as a psycho-technical apparatus entwining voice and power.
 - A Voice and Nothing More [@dolarVoiceNothingMore2006]
+  - in which Dolar philosophises the acousmatic voice as the resistant remainder between body and language.
 - The Truth of the Technological World: Essays on the Genealogy of Presence [@kittlerTruthTechnologicalWorld2013]
-- The Mechanism of Human Speech [@kempelenMechanismHumanSpeech2022]
+  - in which Kittler surveys media technologies to show how technical inscription governs cultural presence.
 
 ## Creative Coding & Cybernetics
 - Zeros + Ones [@plantZerosOnesDigital1998]
-- How We Became Posthuman: Virtual Bodies in Cybernetics, Literature, and Informatics [@haylesHowWeBecame]
+  - in which Plant links cyberfeminism to digital materiality through speculative media histories.
+- How We Became Posthuman: Virtual Bodies in Cybernetics, Literature, and Informatics [@haylesHowWeBecame1999]
+  - in which Hayles traces posthuman subjectivities emerging from cybernetics, informatics, and embodiment.
 - The Question Concerning Technology [@heideggerQuestionConcerningTechnology2008]
+  - in which Heidegger questions technological enframing to recover more mindful modes of revealing.
 - The Glitch Moment(um) [@menkmanGlitchMomentum2011]
+  - in which Menkman theorises glitch aesthetics as critical breaks in networked perception.
 - The Interface Effect [@gallowayInterfaceEffect2012]
+  - in which Galloway interprets interfaces as allegories of control within network culture.
 - Speaking Code: Coding as Aesthetic and Political Expression [@coxSpeakingCodeCoding2013]
+  - in which Cox and McLean argue for code as an expressive, politically situated practice.
 - Mobile Media Making in an Age of Smartphones [@berryMobileMediaMaking2014]
+  - in which Berry and Schleser collect smartphone media-making case studies as situated pedagogy.
 - The Question Concerning Technology in China: An Essay in Cosmotechnics [@huiQuestionConcerningTechnology2016a]
+  - in which Hui advances cosmotechnics as a plural philosophical response to modern technology.
 - Information and Thinking [@serresInformationThinking2017]
+  - in which Serres meditates on information flow as a metabolic process of thought.
 - In The Swarm: Digital Prospects 3 [@hanSwarmDigitalProspects2017]
+  - in which Han critiques digital swarms to diagnose subjectivity in hyperconnected societies.
 - Art and Cosmotechnics [@huiArtCosmotechnics2021]
+  - in which Hui connects aesthetic practice to cosmotechnical genealogies beyond the West.
 - LIVE CODING _a user's manual [@blackwellLiveCodingUsers2022]
+  - in which Blackwell, Cocker, Cox, McLean, and Magnusson document live coding as a collaborative method.
 - Cybernetics for the 21st Century, Vol. 1: Epistemological Reconstruction [@pickeringCybernetics21stCentury2024]
+  - in which Pickering and Hayles revisit cybernetics to propose epistemologies for contemporary technics.
 
 ## Methodology
 - Diffracting Diffraction: Cutting Together-Apart [@baradDiffractingDiffractionCutting2014]
+  - in which Barad stages diffraction as a method for thinking entangled difference.
 - The Mushroom at the End of the World [@tsingMushroomEndWorld2017]
+  - in which Tsing follows matsutake lifeworlds to model collaborative survival on ruined landscapes.
 - How to Make Art at the End of the World [@lovelessHowMakeArt2019]
+  - in which Loveless offers activist art pedagogy for precarity inside neoliberal institutions.
 - A Theoretical Framework for the Critical Posthumanities [@braidottiTheoreticalFrameworkCritical2019]
-- Touching Feeling: Affect, Pedagogy, Performativity [@robinsonHungryListeningResonant2020]
+  - in which Braidotti lays out critical posthuman tools for affirmative, situated scholarship.
+- Touching Feeling: Affect, Pedagogy, Performativity [@sedgwickTouchingFeelingAffect2003]
+  - in which Sedgwick explores affective pedagogy to expand queer performativity and repair.
 - Creative Theories of (Just About) Everything: A Journey into Origins and Imaginations [@luttersCreativeTheoriesJust2020]
+  - in which Lutters advocates creativity education grounded in philosophical storytelling.
 - Let's Become Fungal!: Mycelium Teachings and the Arts [@ostendorf-rodriguezLetsBecomeFungal2023]
+  - in which Ostendorf-Rodriguez invites fungal metaphors to reorient artistic collaboration.
 - Becoming an Artwork [@groysBecomingArtwork2023]
+  - in which Groys argues for life as an aesthetic project amid digital economies.
 - Reading Spinoza in the Anthropocene [@lloydReadingSpinozaAnthropocene2024]
+  - in which Lloyd rereads Spinoza to situate monist ethics within the climate crisis.
 
 ## Contemporary Situation
 - Good Entertainment: A Deconstruction of the Western Passion [@hanGoodEntertainmentDeconstruction2019]
+  - in which Han diagnoses entertainment as a biopolitical regime of self-optimisation.
 - Postcapitalist Desire [@fisherPostcapitalistDesireFinal2020]
+  - in which Fisher charts collective education projects to reclaim desire from neoliberal realism.
+- Construction Site For Possible Worlds [@beechConstructionSitePossible2020]
+  - in which Beech and Mackay collate essays attempting to rejuvenate an emancipatory project under surveillance capitalism.
 - Capital is Dead: Is this Something Worse? [@warkCapitalDeadThis2021]
+  - in which Wark argues that information logistics have supplanted industrial capital with something worse.
 - The Internet Con: How to Seize the Means of Computation [@doctorowInternetConHow2023]
+  - in which Doctorow outlines policy tactics for seizing digital infrastructure from platform monopolies.
 
 <!--Updated outline/summary of your progress against your research plan -->
 # Progress
-- cicade.assembly.fm
-- string.assembly.fm
-- voice.assembly.fm
+
+## cicada.assembly.fm
+
+## string.assembly.fm
+## voice.assembly.fm
+
+## Glossa Derma
+
+Glossa Derma is a piece inspired by
+
+Please find video documentation here → [click](https://youtu.be/_a4BFPdEpOA).
+
+
 
 <!--A summary of any changes to your candidature since your Confirmation of Candidature.-->
 # Changes

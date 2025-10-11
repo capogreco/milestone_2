@@ -47,6 +47,11 @@ header-includes:
     ```
   - |
     ```{=latex}
+    \usepackage{etoolbox}
+    \pretocmd{\tableofcontents}{\clearpage}{}{}
+    ```
+  - |
+    ```{=latex}
     % Indent first paragraph too; comment this line if you prefer no indent on first
     % \usepackage{indentfirst}
     % Enforce paragraph indenting after template adjustments
