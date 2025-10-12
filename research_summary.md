@@ -45,7 +45,7 @@ The pedagogical rational pivots on the project's ability to scaffold cultural pr
 
 ##  Genealogy of Practice
 
-![Distributed Synthesis Genealogy Chart](ds_genealogy.png)
+![Distributed Synthesis Genealogy Chart](images/ds_genealogy.png)
 
 My sonic practice of distributed synthesis inherits from a variety of cultural lineages -- see *figure 1*.  Particular importance is placed on:
 
@@ -65,7 +65,7 @@ This expansion should, secondarily, expand the curricular resources for teachers
 
 The effect of this expanded repertoire in the citizens' cultural life-worlds, should be a more ambitious, expanded creative horizon -- we should be able to imagine the feasibility of some things previously understood to be impossible.  This along with improved digital literacy should bolster the technology generating capacities of diverse communities, and increase the technical sophistication of public discourse, politicians, and ultimately, legislation.
 
-![Distributed Synthesis Stakeholder Impact Chart](ds_stakeholders.png)
+![Distributed Synthesis Stakeholder Impact Chart](images/ds_stakeholders.png)
 
 \pagebreak{}
 
@@ -87,7 +87,7 @@ This shifts the locus of creativity from within the encapsulated bounds of human
 
 A comparison can be made with design processes that build backwards from deliberately calculated, strategically imagined end result --  mycelial creativity should be understood as a *process* methodology, capable of hosting iterative design cycles, but not requiring them.  Instead, over time, as the mycelium runs and accumulates, should the conditions become favourable, a fruiting body can form almost as from its own accord -- as if from an ecological fugue -- half awake, half dreaming.
 
-As an extreme example, we might spontaneously imagine a Camponotini ant infected with ophiocordycep unilateralis, whose nervous system, now possessed by the fungus, climbs as high into the canopy of the rainforest as possible, before becoming host to the fungus' fruiting body, maximising the area of spore dispersal. [@araujoZombieantFungiContinents2018]  The point here being, not so much that a practitioner should sacrifice their body in service of their creative project, but rather that mycelial creativity works best at a resting state, allowing the practitioner's gut feelings to do the work of processing large quantities of data unconsciously, imprecisely, but massively in parallel, rather than deliberately processing a reduced, potentially incomplete set of data, yes -- more precisely, but much more slowly, via serial, explicit, conscious processes.  We might recall Freud's image of the dream-wish, rising like a mushroom from the navel of the dream, exactly where the web of unconscious conceptual relations has reached critical density. [-@freudInterpretationDreams2019]
+As an extreme example, we might spontaneously imagine a Camponotini ant infected with ophiocordycep unilateralis, whose nervous system, now possessed by the fungus, climbs as high into the canopy of the rainforest as possible, before becoming host to the fungus' fruiting body, maximising the area of spore dispersal. [@araujoZombieantFungiContinents2018]  The point here being, not so much that a practitioner should sacrifice their body in service of their creative project, but rather that mycelial creativity works best at a resting state, allowing the practitioner's gut feelings to do the work of processing large quantities of data unconsciously, imprecisely, but massively in parallel, rather than deliberately processing a reduced, potentially incomplete set of data, yes -- more precisely, but much more slowly, via serial, explicit, conscious processes. [@lloydReadingSpinozaAnthropocene2024]  We might recall Freud's image of the dream-wish, rising like a mushroom from the navel of the dream, exactly where the web of unconscious conceptual relations has reached critical density. [-@freudInterpretationDreams2019]
 
 
 ## Iterative Design
@@ -229,20 +229,94 @@ At the micro-level, much of my day to day creative methods are governed by the l
 - The Internet Con: How to Seize the Means of Computation [@doctorowInternetConHow2023]
   - in which Doctorow outlines policy tactics for seizing digital infrastructure from platform monopolies.
 
+\pagebreak{}
+
 <!--Updated outline/summary of your progress against your research plan -->
 # Progress
 
-## cicada.assembly.fm
+## Connectivity Architectures
 
-## string.assembly.fm
-## voice.assembly.fm
+### Local WebSockets Server
 
-## Glossa Derma
+Initially, I started with a localhost-based websockets architecture.  Here the server runs on my laptop and serves both the website and websockets to the synthesis (hereafter, *synth*) browser clients.  Having the server running in close physical proximity meant I was able to build an open sound control (OSC) control interface for the monome grid 128 directly into the server software, which radically simplifies the control data flow:
 
-Glossa Derma is a piece inspired by
+![WebSockets over local server architecture](images/localhost_architecture.png){width=75%}
+
+However, this approach has a significant, blocking drawback, as although most browsers will provide `http://localhost` with `https` privileges for development purposes when accessed from the same machine, attempting to serve `https` to clients via local area network (LAN) or wireless local area network (WLAN) requires participants to to hurdle a very scary looking message before enabling those APIs protected behind `https` security certification (such as WebSockets):
+
+> **WARNING: UNSAFE WEBSITE!!**
+
+> **SECURITY CERTIFICATES MISSING**
+
+I spent considerable time and energy trying to understand how to wrangle the certification processes and domain name system (DNS) servers in such a way that we could have both frictionless user experience and this simple architecture, but this turned into a gigantic headache, and I would not recommend this approach for anyone.  These security protocols are difficult to circumvent by design, and in a way, I suppose we should find some source of comfort in the fact that I was not able to find a way around them.
+
+### Deployed Websockets Server
+
+I found a solution to the security certification problem in Deno Deploy, a deployment platform which automatically deals with certification, deploying code to the internet with `https` by default.  This meant that I would not be able to plug my OSC controller directly into the server software, as this requires access to the server's USB port.  For this reason, this architecture requires two websites -- one for synthesis, and one for control:
+
+![WebSockets over edge deployment architecture](images/edge_architecture_ws.png)
+
+This architecture worked with surprisingly low latency for synth clients that were able to connect.  However, there is a massive problem with this architecture -- not all clients connect to the same server.  This is common for "edge" deployment platforms -- the code is deployed to multiple servers around the world to give users the more reactive user experience, and clients are directed to one of those serves in a dynamic way according to network traffic and other factors.  The problem occurs when synth clients connect to a server that the ctrl client is not connected to. In *Figure 4*, for example, we can appreciate that the ctrl client does not have visibility of synth client 3.
+
+The paradigmatic solution would be to use a database responsible for maintaining state across all the edge deployments.  However, this is not a viable architecture for distributed synthesis, as database platforms are, on the whole, not designed to be used for such dynamic, expressive, timing-critical use cases.
+
+### Star-topology WebRTC Data Network
+
+The solution I have settled on for the moment, is to use Web Real Time Communications (WebRTC) API, which is the connectivity protocol underlying most popular video conferencing platforms, and peer-to-peer file-sharing technologies.  This took a long while to get working, as there are not many learning resources on the internet which explain the uderlying mechanics, and how to use it.
+
+I chipped away for several months and was able to find some amount of success instantiating a video channel WebRTC connection between non-local clients by the end of last year.  However, progress was very slow, and the connections I was getting were very finicky, seeming to timeout and disconnect randomly, and bugs were very difficult to trouble-shoot.  At a certain point, I decided to turn to large language model (LLM) artificial intelligence (AI) agents, to help me understand and build with WebRTC. This changed everything - WebRTC became viable, but came with its own set of trade-offs, which I will elaborate on in a later section (see *Working with LLMs*, below).
+
+Unlike WebSockets, WebRTC communications, once esablished, do not use the server to route data messages -- data is passed directly from browser client to browser client using the shortest possible route through the infrastructure of the internet.  The way it can achieve this is by having an intermediary, called a *signalling server*, exchange the necessary information required for each client to find the other.  This information is formatted according to what is known as the *session description protocol* (SDP).  First, the initiating client sends an offer SDP to the signalling server, which is then passed to the receiving client, which answers by passing the signalling server an answer SDP.  Once both clients have the others' respective SDPs, they have the information they need to find each other, handshake, and establish, in the case of distrbitued synthesis, data channels.
+
+When designing connectivity architectures, sequences like this are often documented as a sequence diagram:
+
+![Simplified SDP Sequence for WebRTC](images/simple_sdp_sequence.png){width=75%}
+
+In reality, this simple sequence is complicated on several fronts, unfortunately.
+
+The information required in the SDP may change, depending on the two clients' relative locations.  For example, if they are on the same network, the two clients only need each others' network interface card (NIC) address and port number to find each other.  This is an easy situation for the purposes of putting together an SDP because this information is readily available to the client.
+
+Much of the time, however, clients will need to navigate through the wider internet in order to find each other.  This presents more of a challenge as clients do not, as a matter of course, have this information on hand.  The way they get this information is to ping an outside server, which can then act as a simple mirror, returning the ping with a message saying your ping appeared to me to come from this *here*, and give the public facing IP and port number that became visible to it.  This external, mirroring server, is called a Session Traversal Utilities for NAT (STUN) server, with NAT standing for Network Address Translator.
+
+Even with this STUN information, some clients may not be able to find each other, due to the cloaking effect of institutional firewalls.  In these situations, an additional server is required -- called a Traversal Using Relays around NAT (TURN) server.  Where STUN servers are quite ubiquitous and process negligible traffic, and are thus freely available, TURN servers are used as relays and as such process much higher amounts of traffic, and require some paid service -- I am currently on a subscription which affords me the use of Twilio TURN servers.
+
+These various bits of information are bundled within SDPs as Interactive Connectivity Establishmend (ICE) candidates, yielding this sequence:
+
+![Simplified STUN & TURN sequence for gathering ICE candidates](images/simple_STUN_&_TURN_sequence.png){width=75%}
+
+There is a problem however, because any given client does not know where in the internet their corresponding client is relative to them, and so they do not know which type of ICE candidate they will actually need, or whether a TURN server actually exists for them at that moment, so it is not clear when exactly clients should wrap up the ICE candidate gathering phase.
+
+For this reason, modern WebRTC use a Trickle ICE protocol, which sends iterative versions of their SDP across as soon as they are ready, and updates them as new ICE candidates come in:
+
+![Trickle ICE sequence](images/trickle_ICE_sequence.png)
+
+However, there is one more hurdle to overcome: if we use our web server as the signalling server, we run into the same problem of visibility we had with deployed websockets server paradigm, ie. if synth clients happen to connect to a different server to ctrl, there will be no visibility, and thus no SDP exchange, and no WebRTC connection.
+
+For this reason, we need a key-value (KV) database, which can maintain state, including SDP information, across edge deployments.  The sequence for the WebRTC handshake protocol, retaining all this complexity, becomes quite involved (see *Figure 9*, below).
+
+
+The benefits of WebRTC is that all the complexity is in the initialisation.  Once the handshake has completed successfully, the signalling server is not required anymore, and the connectivity topology becomes radically simplified, with no intermediaries, and with all control data flowing through the internet via the shortest possible path:
+
+![WebRTC star topology](images/star_topology.png){width=60%}
+
+![Full WebRTC handshake sequence](images/full_webrtc_handshake.png)
+
+It is in the context of this architecture that I have been using, with varying levels of success, that would like to speak some more about three of the interations I have been working on this year.
+
+## Cicada Synth :: cicada.assembly.fm
+
+## Drone Meditation :: string.assembly.fm
+
+I have been attending Anthony Artmann's monthly, participatory drone meditation sessions at Tempo Rubato, iterating on a prototype participatory distributed string synthesis instrument.  I would like to use this section to detail the technical developments I have implemented over this past year.
+
+## Glossa Derma :: voice.assembly.fm
+
+Glossa Derma is a work inspired by
+
 
 Please find video documentation here → [click](https://youtu.be/_a4BFPdEpOA).
 
+## Working with LLMs
 
 
 <!--A summary of any changes to your candidature since your Confirmation of Candidature.-->
